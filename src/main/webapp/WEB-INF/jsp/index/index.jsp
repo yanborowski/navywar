@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>VRaptor Blank Project</title>
+<title>Navy War</title>
 </head>
 <body>
-	<h1>Navywar</h1>
+	<h1>Navy War</h1>
 	
 	<table>
 		<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>

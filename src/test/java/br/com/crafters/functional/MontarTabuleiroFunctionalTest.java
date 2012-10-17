@@ -15,31 +15,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-
 @RunWith(JUnitParamsRunner.class)
 public class MontarTabuleiroFunctionalTest {
 
 	private static final String URL = "http://localhost:8080/navy";
 	WebDriver driver = null;
-	
+
 	@org.junit.Before
 	public void setup(){
 		driver = new HtmlUnitDriver();
 	}
-	
 	@org.junit.After
 	public void teardown(){
 		driver.close();
 		driver = null;
 	}
-	
 	@Test
 	public void verTitulo() {
 		driver.get(URL);
 		WebElement el = driver.findElement(By.cssSelector("body h1"));
-		assertEquals("Navywar", el.getText());
+		assertEquals("Navy War", el.getText());
 	}
-	
 	@Test
 	public void verTabuleiro6linhas(){
 		get(URL);
@@ -56,7 +52,6 @@ public class MontarTabuleiroFunctionalTest {
 			assertEquals(6, cols.size());
 		}
 	}
-	
 	@Test
 	public void verTiposDeNavioParaColocarNoTabuleiro(){
 		get(URL);
